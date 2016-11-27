@@ -12,5 +12,5 @@
         "psr-4": {
             "relbraun\\yii2repeater\\": ""
         }
-    },
+    }
 }
