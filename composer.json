@@ -1,0 +1,13 @@
+{
+    "name": "relbraun\yii2repeater",
+    "description": "Repeater widget for yii2 tabular",
+	"license": "MIT",
+    "require": {
+        "php": "^5.4.3 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "relbraun\\yii2repeater\\": ""
+        }
+    },
+}
