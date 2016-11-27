@@ -1,9 +1,12 @@
 {
-    "name": "relbraun\yii2repeater",
+    "name": "relbraun/yii2repeater",
     "description": "Repeater widget for yii2 tabular",
 	"license": "MIT",
+    "homepage": "https://github.com/relbraun/yii2-repeater",
+    "type": "yii2-extension",
     "require": {
-        "php": "^5.4.3 || ^7.0"
+        "php": "^5.4.3 || ^7.0",
+        "yiisoft/yii2-bootstrap": "@dev"
     },
     "autoload": {
         "psr-4": {
