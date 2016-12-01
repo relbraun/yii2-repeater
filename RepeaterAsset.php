@@ -18,7 +18,7 @@ class RepeaterAsset extends AssetBundle
     public $basePath = '@backend';
 
     public $js = [
-        'js/script.js',
+        'js/js.js',
     ];
     public $css = [
         'css/style.css',
