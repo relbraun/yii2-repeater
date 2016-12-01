@@ -19,11 +19,14 @@ class AppendAction extends Action
      */
     public $model;
 
+    public $contentPath;
+
     public function run()
     {
+        $this->controller->viewPath = dirname(__DIR__) . '/views';
         $id = \Yii::$app->request->post('id');
         $model = new $this->model();
-        $model = $model::findOne($id);
-
+//        $model = $model::findOne($id);
+        return $this->controller->renderPartial('repeater', ['model' => $model, 'contentPath' => $this->contentPath]);
     }
 }
