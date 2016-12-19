@@ -35,3 +35,16 @@ public function actions()
         ];
     }
 ```
+And this is an example of the repeater_view_file.php reminded above:
+```
+<div class="repeater-content">
+    <div class="form-group">
+        <?= Html::label('Some label', Html::getInputId($model, "[$k]attribute")) ?>
+        <?= Html::activeTextInput($model, "[$k]attribute", ['class' => 'form-control']) ?>
+    </div>
+    <div class="form-group">
+        <?= Html::label('Other label', Html::getInputId($model, "[$k]other_attribute")) ?>
+        <?= Html::activeTextInput($model, "[$k]other_attribute", ['class' => 'form-control']) ?>
+    </div>
+</div>
+```

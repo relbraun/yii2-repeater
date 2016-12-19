@@ -34,6 +34,7 @@ jQuery(function($){
             var data ={id:self.id};
             data[yii.getCsrfParam()]=yii.getCsrfToken();
             data.additionalData = $('.repeater-item').find('input,select,textarea').serialize();
+            data.id = self.id;
             $.post(appendUrl,data, function(data){
                 $wrap.append($(data));
             });

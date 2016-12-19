@@ -25,7 +25,7 @@ class DeleteAction extends Action
     public function run()
     {
         $id = \Yii::$app->request->post('id');
-       $model = $this->model;
+        $model = $this->model;
         /** @var ActiveRecord $model */
         $model = $model::findOne($id);
         $response = 0;

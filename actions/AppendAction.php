@@ -27,6 +27,6 @@ class AppendAction extends Action
         $id = \Yii::$app->request->post('id');
         $model = new $this->model();
 //        $model = $model::findOne($id);
-        return $this->controller->renderPartial('repeater', ['model' => $model, 'contentPath' => $this->contentPath]);
+        return $this->controller->renderPartial('repeater', ['model' => $model, 'contentPath' => $this->contentPath, 'k' => $id]);
     }
 }
