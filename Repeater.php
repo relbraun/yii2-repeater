@@ -58,7 +58,7 @@ class Repeater extends Widget
         echo "<div class='ab-repeater'>";
         echo "<div class='list-area'>";
         foreach($this->models as $k => $model){
-            $content = $this->render($this->modelView, array_merge(['model' => $model, 'form' => $this->form,], $this->additionalData));
+            $content = $this->render($this->modelView, array_merge(['model' => $model, 'form' => $this->form, 'k' => $k], $this->additionalData));
             echo $this->render('repeater', ['content' => $content, 'model' => $model, 'k' => $k]);
         }
         echo "</div><a class='btn btn-primary new-repeater' href='javascript:;'>add new</a><a href='javascript:;' class='btn btn-success recover-btn'>Recover</a></div>";
