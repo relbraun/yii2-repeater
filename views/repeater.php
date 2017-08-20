@@ -8,5 +8,5 @@
         $content = $this->render($contentPath, ['model' => $model, 'k' => $k]);
     } ?>
     <?= $content ?>
-    <a class="remove" href="javascript:;" >X</a>
+    <a class="remove" href="javascript:;" >&#x2718;</a>
 </div>
