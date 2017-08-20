@@ -3,7 +3,7 @@
 /* @var $form \yii\widgets\ActiveForm */
 ?>
 
-<div class="repeater-item" data-id="<?= $model->primaryKey ?>">
+<div class="repeater-item" data-id="<?= $k ?>">
     <?php if(isset($contentPath)){
         $content = $this->render($contentPath, ['model' => $model, 'k' => $k]);
     } ?>
